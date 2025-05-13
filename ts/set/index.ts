@@ -2,7 +2,7 @@ type Indexed<T = any> = {
   [key: string]: T;
 };
 
-// Вспомогательная функция глубокого слияния
+// Вспомогательная функция глубокого слияния из задачи merge
 function merge(lhs: Indexed, rhs: Indexed): Indexed {
     for (const key in rhs) {
         if (
